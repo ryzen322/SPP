@@ -304,3 +304,56 @@ button {
             color: #fff;
             font-size: 1.7rem;
             font-weight: 500; } }
+
+@media (max-width: 31.25em) {
+  .schedule {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border-radius: 5px;
+    border: 1px solid green; }
+    .schedule__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0 3rem;
+      background-color: #ffff; }
+      .schedule__header h1 {
+        font-size: 2rem;
+        font-weight: 700; }
+      .schedule__header p {
+        text-align: center;
+        line-height: 1.4;
+        color: #817575cc;
+        font-size: 1.4rem; }
+    .schedule__content {
+      display: flex;
+      gap: 1rem; }
+      .schedule__content--time {
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; }
+        .schedule__content--time .month {
+          height: 8rem;
+          width: 100%;
+          border-bottom: solid 1px #464343cc; }
+          .schedule__content--time .month h1 {
+            font-size: 1.5rem;
+            color: #464343cc;
+            font-weight: 500; }
+        .schedule__content--time .text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+          padding: 1rem 0; }
+          .schedule__content--time .text p {
+            font-size: 1.3rem;
+            color: #4b4545cc;
+            font-weight: 500; } }

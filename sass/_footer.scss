@@ -1,7 +1,6 @@
 .footer {
   @include phone-xs {
     padding: 1rem;
-    // position: absolute;
 
     &__item {
       height: 10rem;
