@@ -1,0 +1,74 @@
+.navigation {
+  height: auto;
+  background-color: #111827;
+  padding: 1rem;
+
+  @include phone-xs {
+    background-color: #111827;
+  }
+
+  &__btn {
+    display: none;
+    @include phone-xs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4.5rem;
+      width: 4.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 2px solid #374151;
+
+      &:hover {
+        background-color: #2f3848;
+      }
+
+      &:active {
+      }
+
+      & span {
+        color: #ccc;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__nav {
+    @include phone-xs {
+      margin-top: 1.5rem;
+      background-color: #1f2937;
+      padding: 2rem;
+      border-radius: 5px;
+
+      & ul {
+        display: flex;
+        flex-direction: column;
+        // gap: 0.25rem;
+
+        & li:first-child {
+          background-color: #1a56db;
+        }
+
+        & li {
+          // background-color: #1a56db;
+          height: 4.7rem;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          padding: 0 1rem;
+          cursor: pointer;
+
+          &:hover:not(:first-child) {
+            background-color: #2f3848;
+          }
+
+          & a {
+            color: #fff;
+            font-size: 1.7rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

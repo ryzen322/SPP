@@ -1,0 +1,42 @@
+.footer {
+  @include phone-xs {
+    padding: 1rem;
+    // position: absolute;
+
+    &__item {
+      height: 10rem;
+      background-color: #1f2937;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      &--text {
+        & h1 {
+          color: #cccc;
+          font-size: 1.5rem;
+        }
+      }
+
+      &--list {
+        & ul {
+          display: flex;
+          gap: 2rem;
+
+          & li {
+            & a {
+              color: #cccc;
+              font-size: 1.4rem;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
